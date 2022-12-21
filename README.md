@@ -1,3 +1,48 @@
+Mao Enhanced Wireshark (support IETF APN protocol)
+-------------------
+This is a forked branch from Wireshark codebase(Gitlab, master), which supports to parse APN protocol.
+
+APN stands for Application-aware Networking.
+
+Its IPv6 variant is called APN6, that means Application-aware IPv6 Networking.
+
+IETF standard draft:
+1. draft-li-apn-header: [Application-aware Networking (APN) Header](https://datatracker.ietf.org/doc/draft-li-apn-header/)
+2. draft-li-apn-ipv6-encap: [Application-aware IPv6 Networking (APN6) Encapsulation](https://datatracker.ietf.org/doc/draft-li-apn-ipv6-encap/)
+
+Wireshark APN Demo
+-------------------
+![Wireshark APN Demo](./resources/APN_Demo_Wireshark.png)
+
+
+Build and Run
+-------------------
+```
+git clone https://github.com/MaoJianwei/Wireshark_APN.git
+cd Wireshark_APN/
+sudo ./tools/debian-setup.sh
+mkdir build/
+cd build/
+cmake -G Ninja ..
+ninja
+./run/wireshark
+```
+
+
+
+Contact
+-------------------
+
+Jianwei Mao, [maojianwei2012@126.com](https://www.maojianwei.com/)
+
+
+.
+
+.
+
+.
+
+
 General Information
 -------------------
 
